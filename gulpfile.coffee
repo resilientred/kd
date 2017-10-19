@@ -26,7 +26,7 @@ gulp.task 'test', (done) ->
 gulp.task 'test-watch', (done) ->
 
   options.singleRun = false
-  options.browsers = ['Chrome']
+  options.browsers = ['PhantomJS']
 
   server(options, ->
     done()  if not doneBefore
